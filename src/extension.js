@@ -91,7 +91,7 @@ function getArtUrlKkbox() {
   var metaArea = document.getElementsByClassName("four-more-meta")[0];
   var artSourceNode = metaArea.getElementsByTagName("img")[0];
   var artUrl = artSourceNode.getAttribute("src");
-  var artUrlMaxResJPG = artUrl.replace(/500x500/, "2000x2000");
+  var artUrlMaxResJPG = artUrl.replace("fit/500x500", "original");
   var artUrlMaxResPNG = artUrlMaxResJPG.replace(/.jpg/, ".png");
   var artUrlMaxResBMP = artUrlMaxResJPG.replace(/.jpg/, ".bmp");
   return {
