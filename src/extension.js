@@ -74,9 +74,9 @@ function getDomain() {
 function getArtUrlItunes() {
   var artSourceNode = document.getElementsByClassName("we-artwork__source")[0];
   var artUrl = artSourceNode.getAttribute("srcset").split(",").pop().split(" ")[0];
-  var artUrlMaxResJPG = artUrl.replace(/939x0w/, "99999x0w");
-  var artUrlMaxResPNG = artUrlMaxResJPG.replace(/x0w.jpg/, "x0w.png");
-  var artUrlMaxResBMP = artUrlMaxResJPG.replace(/x0w.jpg/, "x0w.bmp");
+  var artUrlMaxResJPG = artUrl.replace(/939x0w/, "99999x99999bb-100");
+  var artUrlMaxResPNG = artUrlMaxResJPG.replace(/x0w.jpg/, ".png");
+  var artUrlMaxResBMP = artUrlMaxResJPG.replace(/x0w.jpg/, ".bmp");
   return {
     jpg: artUrlMaxResJPG,
     png: artUrlMaxResPNG,
